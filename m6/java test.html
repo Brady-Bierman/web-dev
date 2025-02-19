@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <meta name="viewport" content="width=device-width">
+
+        <meta charset="utf-8">
+        
+        <title>Java Script Demo</title>
+
+        <script>
+            function ColorChange(TheColor){
+                let div1 = document.getElementById('div1');
+                let TheColor = prompt("enter a valid color name: ", "red")
+                div1.style['color'] = TheColor;
+                window.alert("you chose an ivalid color")
+            }
+
+            function PrintDate(){
+                let div2 = document.getElementById('div2');
+                div2.innerHTML = '<span>2/18/2025</span>' + div2.innerHTML;
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div id="div1">
+            test text
+            <button type="button" id="button1" onclick="ColorChange('red')">change color</button>
+        </div>
+        <div id="div2">
+            <button type="button" id="button2" onclick="PrintDate()">print date</button>
+        </div>
+
+    </body>
+
+</html>
